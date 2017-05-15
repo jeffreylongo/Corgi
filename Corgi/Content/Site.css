@@ -9,6 +9,10 @@
     padding-right: 15px;
 }
 
+.logo {
+    margin-top: -3px;
+}
+
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
@@ -36,7 +40,7 @@ a {
     }
 
 .navbar-nav > li > a {
-    color: #65DEF1;
+    color: #1F5673;
 }
 
 .navbar-nav > li > a:hover {
@@ -110,7 +114,30 @@ body {
     width: 100%;
 }
 
+a {
+    font-family: 'Courier New';
+    font-size: 18px;
+}
+
+h2 {
+    font-family: 'Courier New';
+    font-weight: bolder;
+    color: #1F5673;
+}
+
+    h2 :hover {
+        color: #FF9F33;
+    }
+
+
+.twoBy {
+
+}
+
+.threeBy {
+    margin-top: 20px;
+}
+
 .fourBy {
-    margin-top: 100px;
-    padding-top: 50px;
+    margin-top: 20px;
 }

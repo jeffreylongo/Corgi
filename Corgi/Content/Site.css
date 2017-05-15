@@ -27,6 +27,36 @@ textarea {
     background-color: #65DEF1;
 }
 
+a {
+    color: #1F5673;
+}
+
+    a:hover {
+        color: #FF9F33;
+    }
+
+.navbar-nav > li > a {
+    color: #65DEF1;
+}
+
+.navbar-nav > li > a:hover {
+    color: #FF9F33;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #1F5673;
+}
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #FF9F33;
+    }
+
+.phrase {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* Below here is for the accordion on index*/
 /*******************************
 * Does not work properly if "in" is added after "collapse".
@@ -72,5 +102,15 @@ body {
 
 .demo {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.separator {
+    height: 5px;
+    width: 100%;
+}
+
+.fourBy {
+    margin-top: 100px;
+    padding-top: 50px;
 }

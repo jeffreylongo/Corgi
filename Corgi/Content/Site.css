@@ -75,7 +75,7 @@ a {
 .panel-default > .panel-heading {
     padding: 0;
     border-radius: 0;
-    color: #212121;
+    color: #1F5673;
     background-color: #FAFAFA;
     border-color: #EEEEEE;
 }
@@ -92,7 +92,7 @@ a {
 
 .more-less {
     float: right;
-    color: #212121;
+    color: #1F5673;
 }
 
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
@@ -117,6 +117,8 @@ body {
 a {
     font-family: 'Courier New';
     font-size: 18px;
+    font-weight: bold;
+    color: #1F5673;
 }
 
 h2 {

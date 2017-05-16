@@ -61,6 +61,12 @@ a {
     justify-content: center;
 }
 
+@media (max-width:414px) {
+    .slogan {
+        width: 300px;
+    }
+}
+
 /* Below here is for the accordion on index*/
 /*******************************
 * Does not work properly if "in" is added after "collapse".

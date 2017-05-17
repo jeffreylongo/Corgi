@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<NewsFeed>
+
 @{
     ViewBag.Title = "Home Page";
 }
@@ -12,628 +13,563 @@
 
 <body>
 
-
     <div class="phrase">
         <img class="slogan" src="~/Images/phrase.png" alt="Alternate Text" height="50" />
     </div>
-
-    <div class="container demo">
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <i class="more-less glyphicon glyphicon-plus"></i>
-                            <h2><center>RansomWare Attacks Run Rampant!</center></h2>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                    <div class="panel-body">
-                        <a href="https://www.yahoo.com/tech/worldwide-ransomware-cyberattacks-know-152751340.html">Source 1</a>
-                    </div>
-                    <div class="panel-body">
-                        <a href="http://money.cnn.com/2017/05/15/technology/ransomware-whos-been-hit/">Source 2</a>
-                    </div>
-                    <div class="panel-body">
-                        <a href="https://www.theverge.com/2017/5/15/15641198/microsoft-ransomware-wannacry-security-patch-upgrade-wannacrypt">Source 3</a>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <i class="more-less glyphicon glyphicon-plus"></i>
-                            <h2><center>Markets Smash Records!</center></h2>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body">
-                        <a href="http://www.cnbc.com/2017/05/15/us-markets.html">Source 1</a>
-                    </div>
-                    <div class="panel-body">
-                        <a href="http://www.cnbc.com/2017/05/15/us-markets.html">Source 2</a>
-                    </div>
-                    <div class="panel-body">
-                        <a href="http://www.cnbc.com/2017/05/15/us-markets.html">Source 3</a>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <i class="more-less glyphicon glyphicon-plus"></i>
-                            <h2><center>Trump Screws-Up Again!!</center></h2>
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="panel-body">
-                        <a href="https://www.washingtonpost.com/world/national-security/trump-revealed-highly-classified-information-to-russian-foreign-minister-and-ambassador/2017/05/15/530c172a-3960-11e7-9e48-c4f199710b69_story.html?utm_term=.42f18115972d">Source 1</a>
-                    </div>
-                    <div class="panel-body">
-                        <a href="https://www.washingtonpost.com/world/national-security/trump-revealed-highly-classified-information-to-russian-foreign-minister-and-ambassador/2017/05/15/530c172a-3960-11e7-9e48-c4f199710b69_story.html?utm_term=.42f18115972d">Source 2</a>
-                    </div>
-                    <div class="panel-body">
-                        <a href="https://www.washingtonpost.com/world/national-security/trump-revealed-highly-classified-information-to-russian-foreign-minister-and-ambassador/2017/05/15/530c172a-3960-11e7-9e48-c4f199710b69_story.html?utm_term=.42f18115972d">Source 3</a>
-                    </div>
-                </div>
-            </div>
-        </div><!-- panel-group -->
-    </div>
-
-    <div class="2row">
-        <div class="col-md-6">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="heading25">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse25" aria-expanded="true" aria-controls="collapse25">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                RansomWare Attacks Run Rampant!
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse25" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading25">
-                        <div class="panel-body">
-                            <a href="https://www.yahoo.com/tech/worldwide-ransomware-cyberattacks-know-152751340.html">Source 1</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="http://money.cnn.com/2017/05/15/technology/ransomware-whos-been-hit/">Source 2</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="https://www.theverge.com/2017/5/15/15641198/microsoft-ransomware-wannacry-security-patch-upgrade-wannacrypt">Source 3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="heading26">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse26" aria-expanded="false" aria-controls="collapse26">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse26" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading26">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="heading27">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse27" aria-expanded="false" aria-controls="collapse27">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #3
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse27" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading27">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-            </div><!-- panel-group -->
-        </div>
-    </div>
-
-    <div class="col-md-6">
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="heading28">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse28" aria-expanded="true" aria-controls="collapse28">
-                            <i class="more-less glyphicon glyphicon-plus"></i>
-                            RansomWare Attacks Run Rampant!
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse28" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading28">
-                    <div class="panel-body">
-                        <a href="https://www.yahoo.com/tech/worldwide-ransomware-cyberattacks-know-152751340.html">Source 1</a>
-                    </div>
-                    <div class="panel-body">
-                        <a href="http://money.cnn.com/2017/05/15/technology/ransomware-whos-been-hit/">Source 2</a>
-                    </div>
-                    <div class="panel-body">
-                        <a href="https://www.theverge.com/2017/5/15/15641198/microsoft-ransomware-wannacry-security-patch-upgrade-wannacrypt">Source 3</a>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="heading29">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse29" aria-expanded="false" aria-controls="collapse29">
-                            <i class="more-less glyphicon glyphicon-plus"></i>
-                            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse29" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading29">
-                    <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="heading30">
-                    <h4 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse30" aria-expanded="false" aria-controls="collapse30">
-                            <i class="more-less glyphicon glyphicon-plus"></i>
-                            Collapsible Group Item #3
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapse30" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading30">
-                    <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-        </div><!-- panel-group -->
-    </div>
-
-    <div class="col-md-12" style="clear:both;">
-    </div>
-
-    <div class="threeBy">
-        <div class="col-md-4">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFour">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                RansomWare Attacks Run Rampant!
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                        <div class="panel-body">
-                            <a href="https://www.yahoo.com/tech/worldwide-ransomware-cyberattacks-know-152751340.html">Source 1</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="http://money.cnn.com/2017/05/15/technology/ransomware-whos-been-hit/">Source 2</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="https://www.theverge.com/2017/5/15/15641198/microsoft-ransomware-wannacry-security-patch-upgrade-wannacrypt">Source 3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFive">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #2
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingSix">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #3
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-            </div><!-- panel-group -->
-        </div><!-- container -->
-
-
-
-        <div class="col-md-4">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingSeven">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                RansomWare Attacks Run Rampant!
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
-                        <div class="panel-body">
-                            <a href="https://www.yahoo.com/tech/worldwide-ransomware-cyberattacks-know-152751340.html">Source 1</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="http://money.cnn.com/2017/05/15/technology/ransomware-whos-been-hit/">Source 2</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="https://www.theverge.com/2017/5/15/15641198/microsoft-ransomware-wannacry-security-patch-upgrade-wannacrypt">Source 3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingEight">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #2
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingNine">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #3
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-            </div><!-- panel-group -->
-        </div><!-- container -->
-
-
-        <div class="col-md-4">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTen">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                RansomWare Attacks Run Rampant!
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
-                        <div class="panel-body">
-                            <a href="https://www.yahoo.com/tech/worldwide-ransomware-cyberattacks-know-152751340.html">Source 1</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="http://money.cnn.com/2017/05/15/technology/ransomware-whos-been-hit/">Source 2</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="https://www.theverge.com/2017/5/15/15641198/microsoft-ransomware-wannacry-security-patch-upgrade-wannacrypt">Source 3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingEleven">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #2
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwelve">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #3
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-            </div><!-- panel-group -->
-        </div><!-- container -->
-    </div>
-
-    <div class="col-md-12" style="clear:both;">
-    </div>
-
-    <div class="fourBy">
-        <div class="col-md-3">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThirteen">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                RansomWare Attacks Run Rampant!
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
-                        <div class="panel-body">
-                            <a href="https://www.yahoo.com/tech/worldwide-ransomware-cyberattacks-know-152751340.html">Source 1</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="http://money.cnn.com/2017/05/15/technology/ransomware-whos-been-hit/">Source 2</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="https://www.theverge.com/2017/5/15/15641198/microsoft-ransomware-wannacry-security-patch-upgrade-wannacrypt">Source 3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFourteen">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #2
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFifteen">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #3
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-            </div><!-- panel-group -->
-        </div><!-- container -->
-
-        <div class="col-md-3">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingSixteen">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen" aria-expanded="true" aria-controls="collapseSixteen">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                RansomWare Attacks Run Rampant!
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
-                        <div class="panel-body">
-                            <a href="https://www.yahoo.com/tech/worldwide-ransomware-cyberattacks-know-152751340.html">Source 1</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="http://money.cnn.com/2017/05/15/technology/ransomware-whos-been-hit/">Source 2</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="https://www.theverge.com/2017/5/15/15641198/microsoft-ransomware-wannacry-security-patch-upgrade-wannacrypt">Source 3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingSeventeen">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #2
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventeen">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingEighteen">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #3
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseEighteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEighteen">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-            </div><!-- panel-group -->
-        </div><!-- container -->
-
-        <div class="col-md-3">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingNineteen">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNineteen" aria-expanded="true" aria-controls="collapseNineteen">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                RansomWare Attacks Run Rampant!
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseNineteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNineteen">
-                        <div class="panel-body">
-                            <a href="https://www.yahoo.com/tech/worldwide-ransomware-cyberattacks-know-152751340.html">Source 1</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="http://money.cnn.com/2017/05/15/technology/ransomware-whos-been-hit/">Source 2</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="https://www.theverge.com/2017/5/15/15641198/microsoft-ransomware-wannacry-security-patch-upgrade-wannacrypt">Source 3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwenty">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #2
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwenty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwenty">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="heading21">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse21" aria-expanded="false" aria-controls="collapse21">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #3
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading21">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-            </div><!-- panel-group -->
-        </div><!-- container -->
-
-        <div class="col-md-3">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="heading22">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse22" aria-expanded="true" aria-controls="collapse22">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                RansomWare Attacks Run Rampant!
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading22">
-                        <div class="panel-body">
-                            <a href="https://www.yahoo.com/tech/worldwide-ransomware-cyberattacks-know-152751340.html">Source 1</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="http://money.cnn.com/2017/05/15/technology/ransomware-whos-been-hit/">Source 2</a>
-                        </div>
-                        <div class="panel-body">
-                            <a href="https://www.theverge.com/2017/5/15/15641198/microsoft-ransomware-wannacry-security-patch-upgrade-wannacrypt">Source 3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="heading23">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse23" aria-expanded="false" aria-controls="collapse23">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #2
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading23">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="heading24">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse24" aria-expanded="false" aria-controls="collapse24">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                Collapsible Group Item #3
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading24">
-                        <div class="panel-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-            </div><!-- panel-group -->
-        </div><!-- container -->
-    </div>
+    
 
     <hr />
+    <div class="col-md-12" style="clear:both;">
+    </div>
+    <!--1st HeadLine -- NewsFeedId: 1-->
+    <div class="col-md-12">
+        <div class="headLines">
+            @foreach (var newsfeed in Model)
+            {
+            if (newsfeed.Id == 1)
+            {
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTest">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest" aria-expanded="true" aria-controls="collapseTest">
+                                <i class="more-less glyphicon glyphicon-plus"></i>
+                                <h2><center>@newsfeed.StoryName</center></h2>
+                            </a>
+                        </h4>
+                    </div>
 
-
-    @foreach (var newsfeed in Model)
-    {
-        if (newsfeed.HerdId == 1)
+                    <div id="collapseTest" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest">
+                        @foreach (var article in newsfeed.Articles)
+                        {
+                        <div class="panel-body">
+                            <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            }
+            }
+        </div>
+    </div>
+    <!--2nd HeadLine -- NewsFeedId: 4-->
+    <div class="col-md-12">
+        @foreach (var newsfeed in Model)
         {
+            if (newsfeed.Id == 4)
+            {
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingOne">
+                        <div class="panel-heading" role="tab" id="headingTest2">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest" aria-expanded="true" aria-controls="collapseOne">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest2" aria-expanded="true" aria-controls="collapseTest2">
                                     <i class="more-less glyphicon glyphicon-plus"></i>
                                     <h2><center>@newsfeed.StoryName</center></h2>
                                 </a>
                             </h4>
                         </div>
-                        @foreach (var article in newsfeed.Articles)
-                        {
-                        <div id="collapseTest" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest">
-                            <div class="panel-body">
-                                <a href="@article.Url">@newsfeed.StoryName</a>
-                            </div>
+
+                        <div id="collapseTest2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest2">
+                            @foreach (var article in newsfeed.Articles)
+                    {
+                                <div class="panel-body">
+                                    <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                </div>
+                            }
                         </div>
-                        }
                     </div>
                 </div>
-            
+            }
         }
-    }
+    </div>
+    <!--3rd HeadLine -- NewsFeedId: 5-->
+    <div class="col-md-12">
+        @foreach (var newsfeed in Model)
+        {
+            if (newsfeed.Id == 5)
+            {
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTest3">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest3" aria-expanded="true" aria-controls="collapseTest3">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    <h2><center>@newsfeed.StoryName</center></h2>
+                                </a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseTest3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest3">
+                            @foreach (var article in newsfeed.Articles)
+                    {
+                                <div class="panel-body">
+                                    <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+    <div class="col-md-12" style="clear:both;">
+    </div>
+    <!--1st Double -- NewsFeedId: 6,7,8-->
+    <div class="col-md-6" id="1stDouble">
+        <div class="double1">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 6)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest4">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest4" aria-expanded="true" aria-controls="collapseTest4">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest4">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double2">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 7)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest5">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest5" aria-expanded="true" aria-controls="collapseTest5">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest5">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double3">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 8)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest6">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest6" aria-expanded="true" aria-controls="collapseTest6">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest6">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <!--2nd Double NewsFeedId: 9,10,11-->
+    <div class="col-md-6">
+        <div class="double1">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 9)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest7">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest7" aria-expanded="true" aria-controls="collapseTest7">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest7">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double2">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 10)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest8">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest8" aria-expanded="true" aria-controls="collapseTest8">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest8">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double3">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 11)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest9">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest9" aria-expanded="true" aria-controls="collapseTest9">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest9">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <div class="col-md-12" style="clear:both;">
+    </div>
+    <!--1st Triple -- NewsFeedId: 12,13,14-->
+    <div class="col-md-4" id="1stDouble">
+        <div class="double1">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 12)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest10">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest10" aria-expanded="true" aria-controls="collapseTest10">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest10">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double2">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 13)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest11">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest11" aria-expanded="true" aria-controls="collapseTest11">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest11">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double3">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 14)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest12">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest12" aria-expanded="true" aria-controls="collapseTest12">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest12">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <!--2nd Triple NewsFeedId: 15,16,17-->
+    <div class="col-md-4">
+        <div class="double1">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 15)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest13">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest13" aria-expanded="true" aria-controls="collapseTest13">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest13">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double2">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 16)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest14">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest14" aria-expanded="true" aria-controls="collapseTest14">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest14">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double3">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 17)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest15">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest15" aria-expanded="true" aria-controls="collapseTest15">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest15">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <!--3rd Triple NewsFeedId: 18,19,20-->
+    <div class="col-md-4">
+        <div class="double1">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 18)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest16">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest16" aria-expanded="true" aria-controls="collapseTest16">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest16">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double2">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 19)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest17">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest17" aria-expanded="true" aria-controls="collapseTest17">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest17">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double3">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 20)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest18">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest18" aria-expanded="true" aria-controls="collapseTest18">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest18">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <div class="col-md-12" style="clear:both;">
+    </div>
+
 
 </body>
 </html>

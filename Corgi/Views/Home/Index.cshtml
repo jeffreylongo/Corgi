@@ -1,38 +1,17 @@
-﻿@{
+﻿@model IEnumerable<NewsFeed>
+@{
     ViewBag.Title = "Home Page";
 }
+@using Corgi.Models;
+
 <html>
 
 <head>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
-            type="text/javascript"></script>
 
-    <style type="text/css">
-@@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
-
-#feedControl {
-margin-top : 10px;
-margin-left: auto;
-margin-right: auto;
-width : 440px;
-font-size: 12px;
-color: #9CADD0;
-}
-    </style>
-    <script type="text/javascript">
-function load() {
-var feed ="http://feeds.bbci.co.uk/news/world/rss.xml";
-new GFdynamicFeedControl(feed, "feedControl");
-
-}
-google.load("feeds", "1");
-google.setOnLoadCallback(load);
-    </script>
 </head>
 
 <body>
-    
+
 
     <div class="phrase">
         <img class="slogan" src="~/Images/phrase.png" alt="Alternate Text" height="50" />
@@ -627,11 +606,35 @@ google.setOnLoadCallback(load);
 
     <hr />
 
-    <div class="col-md-12">
-        <div id="body">
-            <div id="feedControl">Loading...</div>
-        </div>
-    </div>
+
+    @foreach (var newsfeed in Model)
+    {
+        if (newsfeed.HerdId == 1)
+        {
+            @newsfeed.StoryName
+            foreach (var herdId in Model)
+            {
+                @newsfeed.Url;
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    <h2><center>@newsfeed.StoryName</center></h2>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTest" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest">
+                            <div class="panel-body">
+                                <a href="@newsfeed.Url">@newsfeed.StoryName</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    }
 
 </body>
 </html>

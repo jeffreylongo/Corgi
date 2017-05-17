@@ -29,5 +29,6 @@ namespace Corgi.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<NewsFeed> News { get; set; }
     }
 }

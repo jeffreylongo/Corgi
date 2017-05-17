@@ -212,8 +212,17 @@
     <Compile Include="Migrations\201705171402552_addRolesBackMaybe.Designer.cs">
       <DependentUpon>201705171402552_addRolesBackMaybe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705171616380_Article.cs" />
+    <Compile Include="Migrations\201705171616380_Article.Designer.cs">
+      <DependentUpon>201705171616380_Article.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705171620341_removeHerdId.cs" />
+    <Compile Include="Migrations\201705171620341_removeHerdId.Designer.cs">
+      <DependentUpon>201705171620341_removeHerdId.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Article.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\NewsFeed.cs" />
@@ -307,6 +316,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705171402552_addRolesBackMaybe.resx">
       <DependentUpon>201705171402552_addRolesBackMaybe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705171616380_Article.resx">
+      <DependentUpon>201705171616380_Article.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705171620341_removeHerdId.resx">
+      <DependentUpon>201705171620341_removeHerdId.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

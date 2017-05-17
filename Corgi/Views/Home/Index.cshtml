@@ -611,10 +611,6 @@
     {
         if (newsfeed.HerdId == 1)
         {
-            @newsfeed.StoryName
-            foreach (var herdId in Model)
-            {
-                @newsfeed.Url;
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
@@ -625,14 +621,17 @@
                                 </a>
                             </h4>
                         </div>
+                        @foreach (var article in newsfeed.Articles)
+                        {
                         <div id="collapseTest" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest">
                             <div class="panel-body">
-                                <a href="@newsfeed.Url">@newsfeed.StoryName</a>
+                                <a href="@article.Url">@newsfeed.StoryName</a>
                             </div>
                         </div>
+                        }
                     </div>
                 </div>
-            }
+            
         }
     }
 

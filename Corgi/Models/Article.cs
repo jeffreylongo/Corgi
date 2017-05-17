@@ -5,12 +5,13 @@ using System.Web;
 
 namespace Corgi.Models
 {
-    public class NewsFeed
+    public class Article
     {
         public int Id { get; set; }
         public string StoryName { get; set; }
+        public string Url { get; set; }
 
-        public ICollection<Article> Articles { get; set; } = new HashSet<Article>();
-
+        public int NewsFeedId { get; set; }
+        public NewsFeed NewsFeed { get; set; }
     }
 }

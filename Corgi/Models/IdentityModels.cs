@@ -30,5 +30,6 @@ namespace Corgi.Models
             return new ApplicationDbContext();
         }
         public DbSet<NewsFeed> News { get; set; }
+        public DbSet<Article> Article { get; set; }
     }
 }

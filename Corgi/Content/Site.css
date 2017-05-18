@@ -37,7 +37,17 @@ a {
 
     a:hover {
         color: #FF9F33;
+        text-decoration: none;
     }
+
+    a:visited {
+        color: #FF9F33;
+    }
+
+        a:visited:hover {
+            color: #65DEF1;
+            text-decoration: none;
+        }
 
 .navbar-nav > li > a {
     color: #1F5673;
@@ -138,6 +148,11 @@ h4 {
     font-weight: bolder;
     color: #1F5673;
 }
+
+    h4 :hover {
+        color: #FF9F33;
+    }
+
 
     h2 :hover {
         color: #FF9F33;

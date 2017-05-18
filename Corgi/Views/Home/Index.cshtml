@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<NewsFeed>
 
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Corgi News";
 }
 @using Corgi.Models;
 
@@ -569,7 +569,368 @@
     </div>
     <div class="col-md-12" style="clear:both;">
     </div>
+    <!--1st Quarter -- NewsFeedId: 21,22,23-->
+    <div class="col-md-3" id="1stDouble">
+        <div class="double1">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 21)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest19">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest19" aria-expanded="true" aria-controls="collapseTest19">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
 
+                            <div id="collapseTest19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest19">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double2">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 22)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest20">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest20" aria-expanded="true" aria-controls="collapseTest20">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest20">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double3">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 23)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest21">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest21" aria-expanded="true" aria-controls="collapseTest21">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest21">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <!--2nd Quarter NewsFeedId: 24,25,26-->
+    <div class="col-md-3">
+        <div class="double1">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 24)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest22">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest22" aria-expanded="true" aria-controls="collapseTest22">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest22">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double2">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 25)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest23">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest23" aria-expanded="true" aria-controls="collapseTest234">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest23">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double3">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 26)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest24">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest24" aria-expanded="true" aria-controls="collapseTest24">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest24">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <!--3rd Quarter NewsFeedId: 27,28,29-->
+    <div class="col-md-3">
+        <div class="double1">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 27)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest25">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest25" aria-expanded="true" aria-controls="collapseTest25">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest25" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest25">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double2">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 28)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest26">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest26" aria-expanded="true" aria-controls="collapseTest26">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest26" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest26">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double3">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 29)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest27">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest27" aria-expanded="true" aria-controls="collapseTest27">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest27" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest27">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <!--4th Quarter NewsFeedId: 30,31,32-->
+    <div class="col-md-3">
+        <div class="double1">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 30)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest28">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest28" aria-expanded="true" aria-controls="collapseTest28">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest28" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest28">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double2">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 31)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest29">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest29" aria-expanded="true" aria-controls="collapseTest29">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest29" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest29">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div class="double3">
+            @foreach (var newsfeed in Model)
+            {
+                if (newsfeed.Id == 32)
+                {
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest30">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest30" aria-expanded="true" aria-controls="collapseTest30">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h4><center>@newsfeed.StoryName</center></h4>
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTest30" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest30">
+                                @foreach (var article in newsfeed.Articles)
+                    {
+                                    <div class="panel-body">
+                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <div class="col-md-12" style="clear:both;">
+    </div>
 
 </body>
 </html>

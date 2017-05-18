@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Corgi.Models;
-
+using System.Data.Entity;
 namespace Corgi.Controllers
 {
     public class HomeController : Controller
@@ -14,7 +14,7 @@ namespace Corgi.Controllers
 
         public ActionResult Index()
         {
-            var news = db.News;
+            var news = db.News.Include(i => i.Articles).ToList();
             return View(news.ToList());
         }
 

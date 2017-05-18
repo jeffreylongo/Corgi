@@ -238,6 +238,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\phrase.png" />
+    <Content Include="max.JPG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">

@@ -10,113 +10,107 @@ using Corgi.Models;
 
 namespace Corgi.Controllers
 {
-    public class ArticlesController : Controller
+    public class NewsFeedsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Articles
+        // GET: NewsFeeds
         public ActionResult Index()
         {
-            var article = db.Article.Include(a => a.NewsFeed);
-            return View(article.ToList());
+            return View(db.News.ToList());
         }
 
-        // GET: Articles/Details/5
+        // GET: NewsFeeds/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Article article = db.Article.Find(id);
-            if (article == null)
+            NewsFeed newsFeed = db.News.Find(id);
+            if (newsFeed == null)
             {
                 return HttpNotFound();
             }
-            return View(article);
+            return View(newsFeed);
         }
 
-        // GET: Articles/Create
+        // GET: NewsFeeds/Create
         public ActionResult Create()
         {
-            //ViewBag.NewsFeedId = new SelectList(db.News, "Id", "StoryName");
-            ViewBag.NewsFeedItem = db.News.Select(s => new SelectListItem { Text = s.StoryName, Value = s.Id.ToString() });
             return View();
         }
 
-        // POST: Articles/Create
+        // POST: NewsFeeds/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,StoryName,Url,NewsFeedId")] Article article)
+        public ActionResult Create([Bind(Include = "Id,StoryName")] NewsFeed newsFeed)
         {
             if (ModelState.IsValid)
             {
-                db.Article.Add(article);
+                db.News.Add(newsFeed);
                 db.SaveChanges();
-                return RedirectToAction("Home");
+                return RedirectToAction("Index");
             }
 
-            ViewBag.NewsFeedId = new SelectList(db.News, "Id", "StoryName", article.NewsFeedId);
-            return View("Home");
+            return View(newsFeed);
         }
 
-        // GET: Articles/Edit/5
+        // GET: NewsFeeds/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Article article = db.Article.Find(id);
-            if (article == null)
+            NewsFeed newsFeed = db.News.Find(id);
+            if (newsFeed == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.NewsFeedId = new SelectList(db.News, "Id", "StoryName", article.NewsFeedId);
-            return View(article);
+            return View(newsFeed);
         }
 
-        // POST: Articles/Edit/5
+        // POST: NewsFeeds/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,StoryName,Url,NewsFeedId")] Article article)
+        public ActionResult Edit([Bind(Include = "Id,StoryName")] NewsFeed newsFeed)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(article).State = EntityState.Modified;
+                db.Entry(newsFeed).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.NewsFeedId = new SelectList(db.News, "Id", "StoryName", article.NewsFeedId);
-            return View(article);
+            return View(newsFeed);
         }
 
-        // GET: Articles/Delete/5
+        // GET: NewsFeeds/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Article article = db.Article.Find(id);
-            if (article == null)
+            NewsFeed newsFeed = db.News.Find(id);
+            if (newsFeed == null)
             {
                 return HttpNotFound();
             }
-            return View(article);
+            return View(newsFeed);
         }
 
-        // POST: Articles/Delete/5
+        // POST: NewsFeeds/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Article article = db.Article.Find(id);
-            db.Article.Remove(article);
+            NewsFeed newsFeed = db.News.Find(id);
+            db.News.Remove(newsFeed);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

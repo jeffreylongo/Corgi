@@ -202,6 +202,7 @@
     <Compile Include="Controllers\ArticlesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NewsFeedsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -300,6 +301,11 @@
     <Content Include="Views\Articles\Details.cshtml" />
     <Content Include="Views\Articles\Edit.cshtml" />
     <Content Include="Views\Articles\Index.cshtml" />
+    <Content Include="Views\NewsFeeds\Create.cshtml" />
+    <Content Include="Views\NewsFeeds\Delete.cshtml" />
+    <Content Include="Views\NewsFeeds\Details.cshtml" />
+    <Content Include="Views\NewsFeeds\Edit.cshtml" />
+    <Content Include="Views\NewsFeeds\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

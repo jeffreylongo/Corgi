@@ -50,11 +50,11 @@ namespace Corgi
             // Uncomment the following lines to enable logging in with third party login providers
             app.UseMicrosoftAccountAuthentication(
                 clientId: "978e0207-2474-493f-9696-29b19be66910",
-                clientSecret: "6D6417668800EBD3CB1287435FD5F898879E7020");
+                clientSecret: "E2BF07C34DE6A47653ED3BF9A8575EBD75AC903C");
 
             app.UseTwitterAuthentication(new TwitterAuthenticationOptions
             {
-                ConsumerKey = "	LvPgpkZBQLuJDcsoV5HkxoDNT",
+                ConsumerKey = "LvPgpkZBQLuJDcsoV5HkxoDNT",
                 ConsumerSecret = "LKTu33BlUUDugaA1GGLJPs8PNaeXqmiGz4r9CqB3z7GT8Gnqvz",
                 BackchannelCertificateValidator = new CertificateSubjectKeyIdentifierValidator(new[]
     {
@@ -67,9 +67,9 @@ namespace Corgi
     })
             });
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "142716546271412",
+               appSecret: "4004626eb56b21f67f53980b14cf8aef");
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {

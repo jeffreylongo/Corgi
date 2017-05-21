@@ -35,6 +35,25 @@ a {
     color: #1F5673;
 }
 
+td {
+    color: #65DEF1;
+    /* css-3 */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    white-space: pre-wrap;
+    white-space: pre-wrap;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%
+}
+
+    td a {
+        color: #FF9F33;
+    }
+
     a:hover {
         color: #FF9F33;
         text-decoration: none;

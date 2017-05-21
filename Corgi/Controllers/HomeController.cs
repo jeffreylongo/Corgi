@@ -18,6 +18,12 @@ namespace Corgi.Controllers
             return View(news.ToList());
         }
 
+        [Authorize(Roles = "admin")]
+        public ActionResult Admin()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

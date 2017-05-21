@@ -222,6 +222,10 @@
     <Compile Include="Migrations\201705171620341_removeHerdId.Designer.cs">
       <DependentUpon>201705171620341_removeHerdId.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705211912462_adminRoles set.cs" />
+    <Compile Include="Migrations\201705211912462_adminRoles set.Designer.cs">
+      <DependentUpon>201705211912462_adminRoles set.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Article.cs" />
@@ -337,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705171620341_removeHerdId.resx">
       <DependentUpon>201705171620341_removeHerdId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705211912462_adminRoles set.resx">
+      <DependentUpon>201705211912462_adminRoles set.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

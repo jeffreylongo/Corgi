@@ -201,6 +201,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ArticlesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HotNewsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NewsApiController.cs" />
     <Compile Include="Controllers\NewsFeedsController.cs" />
@@ -230,6 +231,10 @@
     <Compile Include="Migrations\201705221545568_HotArticlesModelMade.cs" />
     <Compile Include="Migrations\201705221545568_HotArticlesModelMade.Designer.cs">
       <DependentUpon>201705221545568_HotArticlesModelMade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705221935543_HotArticlesModelAndHotNewsController.cs" />
+    <Compile Include="Migrations\201705221935543_HotArticlesModelAndHotNewsController.Designer.cs">
+      <DependentUpon>201705221935543_HotArticlesModelAndHotNewsController.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -324,6 +329,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\HotNews\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -358,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705221545568_HotArticlesModelMade.resx">
       <DependentUpon>201705221545568_HotArticlesModelMade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705221935543_HotArticlesModelAndHotNewsController.resx">
+      <DependentUpon>201705221935543_HotArticlesModelAndHotNewsController.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

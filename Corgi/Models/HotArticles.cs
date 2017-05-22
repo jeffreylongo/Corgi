@@ -7,14 +7,11 @@ namespace Corgi.Models
 {
     public class HotArticles
     {
-        public class Article
-        {
-            public int Id { get; set; }
-            public string StoryName { get; set; }
-            public string Url { get; set; }
+        public int? Id { get; set; }
+        public string StoryName { get; set; }
+        public string Url { get; set; }
 
-            public int NewsFeedId { get; set; }
-            public NewsFeed NewsFeed { get; set; }
-        }
+        public int? NewsFeedId { get; set; }
+        public NewsFeed NewsFeed { get; set; }
     }
 }

@@ -7,6 +7,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Threading.Tasks;
+using Corgi.Models;
 
 namespace Corgi.Controllers
 {
@@ -24,8 +25,10 @@ namespace Corgi.Controllers
             {
                 rawResponse = reader.ReadToEnd();
             }
-            var hotNews = JsonConvert.DeserializeObject(rawResponse);
-            return Ok(hotNews);
+            //var hotNews = JsonConvert.DeserializeObject(rawResponse);
+            HotArticles hA = JsonConvert.DeserializeObject<HotArticles>(rawResponse);
+            var Id = hA.Id;
+            return Ok();
         }
     }
 }

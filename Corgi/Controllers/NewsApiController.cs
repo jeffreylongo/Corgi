@@ -13,10 +13,10 @@ namespace Corgi.Controllers
     public class NewsApiController : ApiController
     {
         // GET: api/NewsApi
-        public void GetArticles()
+        public IHttpActionResult GetArticles()
         {
 
-            var url = $"https://newsapi.org/v1/articles&apiKey=d83621ac9a174c91823a72f6e131fb00";
+            var url = $"http://webhose.io/filterWebContent?token=46e1f57d-4ca5-493c-b5e7-cf187aa11c99&format=json&ts=1495204202926&sort=crawled&q=performance_score%3A%3E0";
             var request = WebRequest.Create(url);
             var response = request.GetResponse();
             var rawResponse = String.Empty;
@@ -25,7 +25,7 @@ namespace Corgi.Controllers
                 rawResponse = reader.ReadToEnd();
             }
             var hotNews = JsonConvert.DeserializeObject(rawResponse);
-
+            return Ok(hotNews);
         }
     }
 }

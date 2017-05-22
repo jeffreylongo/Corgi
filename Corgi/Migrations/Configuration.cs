@@ -20,9 +20,14 @@ namespace Corgi.Migrations
 
             var userRole = "user";
             var admin = "admin";
+            var powerUser = "powerUser";
             var store = new RoleStore<IdentityRole>(context);
             var manager = new RoleManager<IdentityRole>(store);
-
+            if (!context.Roles.Any(a => a.Name == powerUser))
+            {
+                var role = new IdentityRole { Name = powerUser };
+                manager.Create(role);
+            }
             if (!context.Roles.Any(a => a.Name == userRole))
             {
                 var role = new IdentityRole { Name = userRole };

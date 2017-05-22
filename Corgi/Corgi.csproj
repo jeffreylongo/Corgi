@@ -227,9 +227,14 @@
     <Compile Include="Migrations\201705211912462_adminRoles set.Designer.cs">
       <DependentUpon>201705211912462_adminRoles set.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705221545568_HotArticlesModelMade.cs" />
+    <Compile Include="Migrations\201705221545568_HotArticlesModelMade.Designer.cs">
+      <DependentUpon>201705221545568_HotArticlesModelMade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Article.cs" />
+    <Compile Include="Models\HotArticles.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\NewsFeed.cs" />
@@ -311,6 +316,11 @@
     <Content Include="Views\NewsFeeds\Details.cshtml" />
     <Content Include="Views\NewsFeeds\Edit.cshtml" />
     <Content Include="Views\NewsFeeds\Index.cshtml" />
+    <Content Include="Views\HotArticles\Create.cshtml" />
+    <Content Include="Views\HotArticles\Delete.cshtml" />
+    <Content Include="Views\HotArticles\Details.cshtml" />
+    <Content Include="Views\HotArticles\Edit.cshtml" />
+    <Content Include="Views\HotArticles\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -345,6 +355,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705211912462_adminRoles set.resx">
       <DependentUpon>201705211912462_adminRoles set.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705221545568_HotArticlesModelMade.resx">
+      <DependentUpon>201705221545568_HotArticlesModelMade.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

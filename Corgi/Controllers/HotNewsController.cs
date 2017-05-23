@@ -12,6 +12,7 @@ using System.Web.Mvc;
 
 
 
+
 namespace Corgi.Controllers
 {
     public class HotNewsController : Controller
@@ -32,12 +33,9 @@ namespace Corgi.Controllers
 
             HotArticles hotArticle = new HotArticles
             {
-
                 StoryName = (string)json["posts"][0]["thread"]["title"],
                 Url = (string)json["posts"][0]["thread"]["url"]
-
             };
-
             //var hotArticle = JsonConvert.DeserializeObject(rawResponse);
 
             return View(hotArticle);

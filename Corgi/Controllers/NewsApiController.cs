@@ -25,10 +25,10 @@ namespace Corgi.Controllers
             {
                 rawResponse = reader.ReadToEnd();
             }
-            //var hotNews = JsonConvert.DeserializeObject(rawResponse);
-            HotArticles hA = JsonConvert.DeserializeObject<HotArticles>(rawResponse);
-            var Id = hA.Id;
-            return Ok();
+            var hotNews = JsonConvert.DeserializeObject(rawResponse);
+            //HotArticles hA = JsonConvert.DeserializeObject<HotArticles>(rawResponse);
+            //var Id = hA.Id;
+            return Ok(hotNews);
         }
     }
 }

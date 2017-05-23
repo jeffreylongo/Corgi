@@ -32,9 +32,13 @@ namespace Corgi.Controllers
 
             HotArticles hotArticle = new HotArticles
             {
-                StoryName = (string)json["title"],
-                Url = (string)json["url"],
+
+                StoryName = (string)json["posts"][0]["thread"]["title"],
+                Url = (string)json["posts"][0]["thread"]["url"]
+
             };
+
+            //var hotArticle = JsonConvert.DeserializeObject(rawResponse);
 
             return View(hotArticle);
 

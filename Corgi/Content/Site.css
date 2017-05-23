@@ -96,6 +96,7 @@ table {
     }
 }
 
+
 /* Below here is for the accordion on index*/
 /*******************************
 * Does not work properly if "in" is added after "collapse".
@@ -159,7 +160,7 @@ a {
 h2 {
     font-family: 'Courier New';
     font-weight: bolder;
-    color: #1F5673;
+    color: #FF9F33;
 }
 
 h4 {

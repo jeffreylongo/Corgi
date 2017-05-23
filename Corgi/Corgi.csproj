@@ -326,6 +326,7 @@
     <Content Include="Views\HotArticles\Details.cshtml" />
     <Content Include="Views\HotArticles\Edit.cshtml" />
     <Content Include="Views\HotArticles\Index.cshtml" />
+    <Content Include="Views\HotNews\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

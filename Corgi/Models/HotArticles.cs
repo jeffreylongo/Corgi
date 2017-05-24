@@ -13,5 +13,6 @@ namespace Corgi.Models
 
         public int? NewsFeedId { get; set; }
         public NewsFeed NewsFeed { get; set; }
+
     }
 }

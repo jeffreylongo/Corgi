@@ -31,14 +31,9 @@ namespace Corgi.Controllers
 
             JObject json = JObject.Parse(rawResponse);
 
-            HotArticles hotArticle = new HotArticles
-            {
-                StoryName = (string)json["posts"][0]["thread"]["title"],
-                Url = (string)json["posts"][0]["thread"]["url"]
-            };
-            //var hotArticle = JsonConvert.DeserializeObject(rawResponse);
+            var hotArticles = json["posts"].Select(s => new HotArticles { StoryName = s["thread"]["title"].ToString(), Url = s["thread"]["url"].ToString() });
 
-            return View(hotArticle);
+            return View(hotArticles);
 
         }
     }

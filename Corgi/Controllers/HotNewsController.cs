@@ -20,7 +20,7 @@ namespace Corgi.Controllers
         // GET: HotNews
         public ActionResult Index()
         {
-            var url = $"http://webhose.io/filterWebContent?token=46e1f57d-4ca5-493c-b5e7-cf187aa11c99&format=json&ts=1495204202926&sort=crawled&q=performance_score%3A%3E0";
+            var url = $"http://webhose.io/filterWebContent?token=46e1f57d-4ca5-493c-b5e7-cf187aa11c99&format=json&ts=1495547802409&sort=crawled&q=language%3Aenglish";
             var request = WebRequest.Create(url);
             var response = request.GetResponse();
             var rawResponse = String.Empty;

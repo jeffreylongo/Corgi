@@ -31,7 +31,9 @@ namespace Corgi.Controllers
 
             JObject json = JObject.Parse(rawResponse);
 
-            var hotArticles = json["posts"].Select(s => new HotArticles { StoryName = s["thread"]["title"].ToString(), Url = s["thread"]["url"].ToString() });
+            var hotArticles = json["posts"]
+                .Select(s => new HotArticles { StoryName = s["thread"]["title"].ToString(), Url = s["thread"]["url"].ToString() })
+                .GroupBy(g => g.Url).Select(s => s.First());
 
             return View(hotArticles);
 

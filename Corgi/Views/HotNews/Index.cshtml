@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<HotArticles>
-    
+
 @using Corgi.Models;
 
 @{
@@ -8,11 +8,11 @@
 
 @foreach (var story in Model)
 {
-<h2>
-    @story.StoryName
-</h2>
-<h3>
-    @story.Url
-</h3>
+        <h2>
+            @story.StoryName
+        </h2>
+        <h3>
+            @story.Url
+        </h3>
 
 }

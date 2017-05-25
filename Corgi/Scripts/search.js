@@ -4,7 +4,7 @@
     };
     console.log("searching...");
     $.ajax({
-        url: '/HotNews/Index',
+        url: '/HotNews/Search',
         type: "POST",
         data: JSON.stringify(_data),
         contentType: "application/json",

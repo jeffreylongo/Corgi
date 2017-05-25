@@ -1,6 +1,6 @@
 ﻿let searchNews = () => {
     var _data = {
-        needle: $("#needle").val()
+        StoryName: $("#needle").val()
     };
     console.log("searching...");
     $.ajax({

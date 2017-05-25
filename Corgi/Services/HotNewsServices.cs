@@ -52,7 +52,7 @@ namespace Corgi.Services
             if (searchModel != null)
             {
                 if (searchModel.StoryName != null)
-                    hotArticles = result.Where(w => w.StoryName == searchModel.StoryName);
+                    hotArticles = result.Where(w => w.StoryName.Contains(searchModel.StoryName));
             }
 
             return hotArticles;

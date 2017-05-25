@@ -31,6 +31,17 @@ textarea {
     background-color: #65DEF1;
 }
 
+.hotNews {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hotNewsUrl {
+    width: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 a {
     color: #1F5673;
 }

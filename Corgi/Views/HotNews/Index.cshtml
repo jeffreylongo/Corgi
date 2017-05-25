@@ -8,6 +8,7 @@
 
 @foreach (var story in Model)
 {
+<div class="newsWrap">
     <div class="hotNews">
         <h2>
             @story.StoryName
@@ -18,4 +19,6 @@
             @story.Url
         </h3>
     </div>
+</div>
+
 }

@@ -36,10 +36,13 @@ textarea {
     flex-wrap: wrap;
 }
 
+.newsWrap {
+    width: 100%;
+}
+
 .hotNewsUrl {
-    width: 0px;
-    display: flex;
-    flex-wrap: wrap;
+    
+    word-wrap: break-word;
 }
 
 a {

@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<HotArticles>
 
+
 @using Corgi.Models;
 
 @{
@@ -8,7 +9,7 @@
 
 <div class="row">
     <input class="input-group" type="text" id="needle" />
-    <button id="searchButton" onclick="searchQuestions();"><i class="glyphicon glyphicon-search"></i> </button>
+    <button id="searchButton" onclick="searchNews();"><i class="glyphicon glyphicon-search"></i> </button>
 </div>
 
 @foreach (var story in Model)

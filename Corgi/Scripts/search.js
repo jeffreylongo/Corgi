@@ -1,4 +1,4 @@
-﻿let searchQuestions = () => {
+﻿let searchNews = () => {
     var _data = {
         needle: $("#needle").val()
     };

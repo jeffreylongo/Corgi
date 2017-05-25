@@ -5,7 +5,7 @@
     console.log("searching...");
     $.ajax({
         url: '/HotNews/Index',
-        type: "GET",
+        type: "POST",
         data: JSON.stringify(_data),
         contentType: "application/json",
         dataType: "html",

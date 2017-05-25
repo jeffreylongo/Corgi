@@ -29,5 +29,12 @@ namespace Corgi.Services
                 .GroupBy(g => g.Url).Select(s => s.First());
             return hotArticles;
         }
+
+        //GET: QueryableNews
+        public IQueryable<HotArticles> SearchNews(HotArticles search)
+        {
+            var result = 
+
+        }
     }
 }

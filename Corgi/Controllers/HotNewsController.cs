@@ -17,9 +17,9 @@ namespace Corgi.Controllers
     public class HotNewsController : Controller
     {
         // GET: HotNews
-        public ActionResult Index()
+        public ActionResult Index(NewsSearchModel searchModel)
         {
-            var hotArticles = HotNewsServices.GetTheNews();
+            var hotArticles = HotNewsServices.GetTheNews(searchModel);
             return View(hotArticles);
         }
     }

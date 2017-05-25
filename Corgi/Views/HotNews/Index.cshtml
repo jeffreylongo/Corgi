@@ -6,6 +6,11 @@
     ViewBag.Title = "Index";
 }
 
+<div class="row">
+    <input class="input-group" type="text" id="needle" />
+    <button id="searchButton" onclick="searchQuestions();"><i class="glyphicon glyphicon-search"></i> </button>
+</div>
+
 @foreach (var story in Model)
 {
 <div class="newsWrap">

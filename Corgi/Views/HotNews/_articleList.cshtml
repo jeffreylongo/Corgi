@@ -1,0 +1,19 @@
+﻿@model IEnumerable<HotArticles>
+@using Corgi.Models;
+
+@foreach (var story in Model)
+{
+    <div class="newsWrap">
+        <div class="hotNews">
+            <h2>
+                @story.StoryName
+            </h2>
+        </div>
+        <div class="hotNewsUrl">
+            <h3>
+                @story.Url
+            </h3>
+        </div>
+    </div>
+
+}

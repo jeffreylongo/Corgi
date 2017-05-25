@@ -22,5 +22,12 @@ namespace Corgi.Controllers
             var hotArticles = HotNewsServices.GetTheNews(searchModel);
             return View(hotArticles);
         }
+
+        public ActionResult Search(NewsSearchModel searchModel)
+        {
+            var hotArticles = HotNewsServices.GetTheNews(searchModel);
+            return PartialView("_articleList", hotArticles);
+
+        }
     }
 }

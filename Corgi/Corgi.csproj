@@ -239,6 +239,10 @@
     <Compile Include="Migrations\201705221935543_HotArticlesModelAndHotNewsController.Designer.cs">
       <DependentUpon>201705221935543_HotArticlesModelAndHotNewsController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705252048038_search.cs" />
+    <Compile Include="Migrations\201705252048038_search.Designer.cs">
+      <DependentUpon>201705252048038_search.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Article.cs" />
@@ -333,6 +337,7 @@
     <Content Include="Views\HotArticles\Edit.cshtml" />
     <Content Include="Views\HotArticles\Index.cshtml" />
     <Content Include="Views\HotNews\Index.cshtml" />
+    <Content Include="Views\HotNews\_articleList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -373,6 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705221935543_HotArticlesModelAndHotNewsController.resx">
       <DependentUpon>201705221935543_HotArticlesModelAndHotNewsController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705252048038_search.resx">
+      <DependentUpon>201705252048038_search.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

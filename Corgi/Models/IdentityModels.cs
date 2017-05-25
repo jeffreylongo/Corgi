@@ -31,5 +31,7 @@ namespace Corgi.Models
         }
         public DbSet<NewsFeed> News { get; set; }
         public DbSet<Article> Article { get; set; }
+
+        public System.Data.Entity.DbSet<Corgi.Models.HotArticles> HotArticles { get; set; }
     }
 }

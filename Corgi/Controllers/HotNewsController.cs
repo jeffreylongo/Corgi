@@ -11,23 +11,25 @@ using System.Web.Http;
 using System.Web.Mvc;
 using Corgi.Services;
 using Microsoft.Ajax.Utilities;
+using System.Threading.Tasks;
 
 namespace Corgi.Controllers
 {
     public class HotNewsController : Controller
     {
         // GET: HotNews
-        public ActionResult Index(NewsSearchModel searchModel)
+        public async Task<ActionResult> Index(NewsSearchModel searchModel)
         {
-            var hotArticles = HotNewsServices.GetTheNews(searchModel);
+            var hotArticles = await HotNewsServices.GetTheNews(searchModel);
             return View(hotArticles);
         }
 
-        public ActionResult Search(NewsSearchModel searchModel)
+        public async Task<ActionResult> Search(NewsSearchModel searchModel)
         {
-            var hotArticles = HotNewsServices.GetTheNews(searchModel);
+            var hotArticles = await HotNewsServices.GetTheNews(searchModel);
             return PartialView("_articleList", hotArticles);
 
         }
+        
     }
 }

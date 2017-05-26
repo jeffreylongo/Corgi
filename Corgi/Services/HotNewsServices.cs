@@ -7,6 +7,7 @@ using System.Net;
 using System.IO;
 using Newtonsoft.Json.Linq;
 using Microsoft.Ajax.Utilities;
+using System.Threading.Tasks;
 
 namespace Corgi.Services
 {
@@ -31,11 +32,11 @@ namespace Corgi.Services
         //    return hotArticles;
         //}
 
-        public static IEnumerable<HotArticles> GetTheNews(NewsSearchModel searchModel)
+        public static async Task<IEnumerable<HotArticles>> GetTheNews(NewsSearchModel searchModel)
         {
-            var url = $"http://webhose.io/filterWebContent?token=46e1f57d-4ca5-493c-b5e7-cf187aa11c99&format=json&ts=1495411468230&sort=relevancy&q=language%3Aenglish%20site_type%3Anews";
+            var url = $"http://webhose.io/filterWebContent?token=46e1f57d-4ca5-493c-b5e7-cf187aa11c99&format=json&ts=1495730043894&sort=crawled&q=language%3Aenglish%20site_type%3Anews";
             var request = WebRequest.Create(url);
-            var response = request.GetResponse();
+            var response = await request.GetResponseAsync();
             var rawResponse = String.Empty;
             using (var reader = new StreamReader(response.GetResponseStream()))
             {

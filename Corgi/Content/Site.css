@@ -29,6 +29,7 @@ textarea {
 
 .navbar-inverse {
     background-color: #65DEF1;
+    border-top: 2px solid #FF9F33;
 }
 
 .hotNews {

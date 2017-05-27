@@ -40,7 +40,7 @@ namespace Corgi.Services
             var rawResponse = String.Empty;
             using (var reader = new StreamReader(response.GetResponseStream()))
             {
-                rawResponse = reader.ReadToEnd();
+                rawResponse = await reader.ReadToEndAsync();
             }
 
             JObject json = JObject.Parse(rawResponse);

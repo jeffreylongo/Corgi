@@ -288,6 +288,7 @@ h4 {
     justify-content: center;
 }
 
+
 .logInBg {
     margin-left: 0;
     padding-left: 0;
@@ -299,6 +300,16 @@ h4 {
     background: url("/Images/max.JPG") center no-repeat;
     opacity: .5;
     position: absolute;
+}
+
+@media (max-width: 768px) {
+    .logInBg {
+        position: relative;
+    }
+    .logInWords {
+        position: relative;
+        margin-left: -200px;
+    }
 }
 
 .logInWords {

@@ -48,9 +48,9 @@ namespace Corgi
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
             // Uncomment the following lines to enable logging in with third party login providers
-            app.UseMicrosoftAccountAuthentication(
-                clientId: "978e0207-2474-493f-9696-29b19be66910",
-                clientSecret: "E2BF07C34DE6A47653ED3BF9A8575EBD75AC903C");
+            //app.UseMicrosoftAccountAuthentication(
+            //    clientId: "978e0207-2474-493f-9696-29b19be66910",
+            //    clientSecret: "E2BF07C34DE6A47653ED3BF9A8575EBD75AC903C");
 
             app.UseTwitterAuthentication(new TwitterAuthenticationOptions
             {
@@ -67,9 +67,9 @@ namespace Corgi
     })
             });
 
-            app.UseFacebookAuthentication(
-               appId: "142716546271412",
-               appSecret: "4004626eb56b21f67f53980b14cf8aef");
+            //app.UseFacebookAuthentication(
+            //   appId: "142716546271412",
+            //   appSecret: "4004626eb56b21f67f53980b14cf8aef");
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {

@@ -13,49 +13,53 @@
 
 <body>
 
-    <div class="phrase">
-        <img class="slogan" src="~/Images/phrase.png" alt="Alternate Text" height="50" />
-    </div>
-    
+    <div class="wholeWrap">
+        <div class="phrase">
+            <img class="slogan" src="~/Images/phrase.png" alt="Alternate Text" height="50" />
+        </div>
 
-    <hr />
-    <div class="col-md-12" style="clear:both;">
-    </div>
+
+        @if (HttpContext.Current.User.Identity.IsAuthenticated)
+        {
+            <hr />
+            <div class="col-md-12" style="clear:both;">
+            </div>
+
     <!--1st HeadLine -- NewsFeedId: 1-->
-    <div class="col-md-12">
-        <div class="headLines">
-            @foreach (var newsfeed in Model)
+            <div class="col-md-12">
+                <div class="headLines">
+                    @foreach (var newsfeed in Model)
             {
             if (newsfeed.Id == 1)
             {
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTest">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest" aria-expanded="true" aria-controls="collapseTest">
-                                <i class="more-less glyphicon glyphicon-plus"></i>
-                                <h2><center>@newsfeed.StoryName</center></h2>
-                            </a>
-                        </h4>
-                    </div>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTest">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTest" aria-expanded="true" aria-controls="collapseTest">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                        <h2><center>@newsfeed.StoryName</center></h2>
+                                    </a>
+                                </h4>
+                            </div>
 
-                    <div id="collapseTest" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest">
-                        @foreach (var article in newsfeed.Articles)
+                            <div id="collapseTest" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest">
+                                @foreach (var article in newsfeed.Articles)
                         {
-                        <div class="panel-body">
-                            <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                        </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                         }
+                            </div>
+                        </div>
                     </div>
+            }
+            }
                 </div>
             </div>
-            }
-            }
-        </div>
-    </div>
     <!--2nd HeadLine -- NewsFeedId: 4-->
-    <div class="col-md-12">
-        @foreach (var newsfeed in Model)
+            <div class="col-md-12">
+                @foreach (var newsfeed in Model)
         {
             if (newsfeed.Id == 4)
             {
@@ -73,19 +77,19 @@
                         <div id="collapseTest2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest2">
                             @foreach (var article in newsfeed.Articles)
                     {
-                                <div class="panel-body">
-                                    <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                </div>
+                        <div class="panel-body">
+                            <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                        </div>
                             }
                         </div>
                     </div>
                 </div>
             }
         }
-    </div>
+            </div>
     <!--3rd HeadLine -- NewsFeedId: 5-->
-    <div class="col-md-12">
-        @foreach (var newsfeed in Model)
+            <div class="col-md-12">
+                @foreach (var newsfeed in Model)
         {
             if (newsfeed.Id == 5)
             {
@@ -103,22 +107,22 @@
                         <div id="collapseTest3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest3">
                             @foreach (var article in newsfeed.Articles)
                     {
-                                <div class="panel-body">
-                                    <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                </div>
+                        <div class="panel-body">
+                            <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                        </div>
                             }
                         </div>
                     </div>
                 </div>
             }
         }
-    </div>
-    <div class="col-md-12" style="clear:both;">
-    </div>
+            </div>
+            <div class="col-md-12" style="clear:both;">
+            </div>
     <!--1st Double -- NewsFeedId: 6,7,8-->
-    <div class="col-md-6" id="1stDouble">
-        <div class="double1">
-            @foreach (var newsfeed in Model)
+            <div class="col-md-6" id="1stDouble">
+                <div class="double1">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 6)
                 {
@@ -136,18 +140,18 @@
                             <div id="collapseTest4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest4">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double2">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double2">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 7)
                 {
@@ -165,18 +169,18 @@
                             <div id="collapseTest5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest5">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double3">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double3">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 8)
                 {
@@ -194,21 +198,21 @@
                             <div id="collapseTest6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest6">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-    </div>
+                </div>
+            </div>
     <!--2nd Double NewsFeedId: 9,10,11-->
-    <div class="col-md-6">
-        <div class="double1">
-            @foreach (var newsfeed in Model)
+            <div class="col-md-6">
+                <div class="double1">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 9)
                 {
@@ -226,18 +230,18 @@
                             <div id="collapseTest7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest7">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double2">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double2">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 10)
                 {
@@ -255,18 +259,18 @@
                             <div id="collapseTest8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest8">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double3">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double3">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 11)
                 {
@@ -284,23 +288,23 @@
                             <div id="collapseTest9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest9">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-    </div>
-    <div class="col-md-12" style="clear:both;">
-    </div>
+                </div>
+            </div>
+            <div class="col-md-12" style="clear:both;">
+            </div>
     <!--1st Triple -- NewsFeedId: 12,13,14-->
-    <div class="col-md-4" id="1stDouble">
-        <div class="double1">
-            @foreach (var newsfeed in Model)
+            <div class="col-md-4" id="1stDouble">
+                <div class="double1">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 12)
                 {
@@ -318,18 +322,18 @@
                             <div id="collapseTest10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest10">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double2">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double2">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 13)
                 {
@@ -347,18 +351,18 @@
                             <div id="collapseTest11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest11">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double3">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double3">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 14)
                 {
@@ -376,21 +380,21 @@
                             <div id="collapseTest12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest12">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-    </div>
+                </div>
+            </div>
     <!--2nd Triple NewsFeedId: 15,16,17-->
-    <div class="col-md-4">
-        <div class="double1">
-            @foreach (var newsfeed in Model)
+            <div class="col-md-4">
+                <div class="double1">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 15)
                 {
@@ -408,18 +412,18 @@
                             <div id="collapseTest13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest13">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double2">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double2">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 16)
                 {
@@ -437,18 +441,18 @@
                             <div id="collapseTest14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest14">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double3">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double3">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 17)
                 {
@@ -466,21 +470,21 @@
                             <div id="collapseTest15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest15">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-    </div>
+                </div>
+            </div>
     <!--3rd Triple NewsFeedId: 18,19,20-->
-    <div class="col-md-4">
-        <div class="double1">
-            @foreach (var newsfeed in Model)
+            <div class="col-md-4">
+                <div class="double1">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 18)
                 {
@@ -498,18 +502,18 @@
                             <div id="collapseTest16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest16">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double2">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double2">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 19)
                 {
@@ -527,18 +531,18 @@
                             <div id="collapseTest17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest17">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double3">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double3">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 20)
                 {
@@ -556,23 +560,23 @@
                             <div id="collapseTest18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest18">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-    </div>
-    <div class="col-md-12" style="clear:both;">
-    </div>
+                </div>
+            </div>
+            <div class="col-md-12" style="clear:both;">
+            </div>
     <!--1st Quarter -- NewsFeedId: 21,22,23-->
-    <div class="col-md-3" id="1stDouble">
-        <div class="double1">
-            @foreach (var newsfeed in Model)
+            <div class="col-md-3" id="1stDouble">
+                <div class="double1">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 21)
                 {
@@ -590,18 +594,18 @@
                             <div id="collapseTest19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest19">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double2">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double2">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 22)
                 {
@@ -619,18 +623,18 @@
                             <div id="collapseTest20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest20">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double3">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double3">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 23)
                 {
@@ -648,21 +652,21 @@
                             <div id="collapseTest21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest21">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-    </div>
+                </div>
+            </div>
     <!--2nd Quarter NewsFeedId: 24,25,26-->
-    <div class="col-md-3">
-        <div class="double1">
-            @foreach (var newsfeed in Model)
+            <div class="col-md-3">
+                <div class="double1">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 24)
                 {
@@ -680,18 +684,18 @@
                             <div id="collapseTest22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest22">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double2">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double2">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 25)
                 {
@@ -709,18 +713,18 @@
                             <div id="collapseTest23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest23">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double3">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double3">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 26)
                 {
@@ -738,21 +742,21 @@
                             <div id="collapseTest24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest24">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-    </div>
+                </div>
+            </div>
     <!--3rd Quarter NewsFeedId: 27,28,29-->
-    <div class="col-md-3">
-        <div class="double1">
-            @foreach (var newsfeed in Model)
+            <div class="col-md-3">
+                <div class="double1">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 27)
                 {
@@ -770,18 +774,18 @@
                             <div id="collapseTest25" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest25">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double2">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double2">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 28)
                 {
@@ -799,18 +803,18 @@
                             <div id="collapseTest26" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest26">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double3">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double3">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 29)
                 {
@@ -828,21 +832,21 @@
                             <div id="collapseTest27" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest27">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-    </div>
+                </div>
+            </div>
     <!--4th Quarter NewsFeedId: 30,31,32-->
-    <div class="col-md-3">
-        <div class="double1">
-            @foreach (var newsfeed in Model)
+            <div class="col-md-3">
+                <div class="double1">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 30)
                 {
@@ -860,18 +864,18 @@
                             <div id="collapseTest28" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest28">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double2">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double2">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 31)
                 {
@@ -889,18 +893,18 @@
                             <div id="collapseTest29" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest29">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
-        </div>
-        <div class="double3">
-            @foreach (var newsfeed in Model)
+                </div>
+                <div class="double3">
+                    @foreach (var newsfeed in Model)
             {
                 if (newsfeed.Id == 32)
                 {
@@ -918,19 +922,34 @@
                             <div id="collapseTest30" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTest30">
                                 @foreach (var article in newsfeed.Articles)
                     {
-                                    <div class="panel-body">
-                                        <center><a href="@article.Url">@newsfeed.StoryName</a></center>
-                                    </div>
+                            <div class="panel-body">
+                                <center><a href="@article.Url">@newsfeed.StoryName</a></center>
+                            </div>
                                 }
                             </div>
                         </div>
                     </div>
                 }
             }
+                </div>
+            </div>
+            <div class="col-md-12" style="clear:both;">
+            </div>
+        }
+        else
+        {
+            <div class="logInSplash">
+                <div class="logInBg"></div>
+                <div class="logInWords">
+                    <h2><button type="button" class="btn btn-primary" onclick="location.href='/Account/Login/'">Log In</button> to start herding.</h2>
+                </div>
+            </div>
+        }
+        <div class="col-md-12" style="clear:both;">
         </div>
-    </div>
-    <div class="col-md-12" style="clear:both;">
+
     </div>
 
 </body>
+
 </html>

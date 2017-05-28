@@ -11,6 +11,7 @@ namespace Corgi.Models
         public string StoryName { get; set; }
 
         public ICollection<Article> Articles { get; set; } = new HashSet<Article>();
+        public ICollection<HotArticles> HotArticles { get; set; } = new HashSet<HotArticles>();
 
     }
 }

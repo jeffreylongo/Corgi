@@ -15,6 +15,13 @@
 
 .logo {
     margin-top: -3px;
+    margin-left: -10px;
+    padding-left: 0px;
+}
+
+.logoFace {
+    margin-right: 0px;
+    padding-right: 0px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -331,4 +338,20 @@ h4 {
 
 .foot {
     position: ;
+}
+
+.bottomFace {
+    display: flex;
+    justify-content: center;
+    margin-top: 1050px;
+    opacity: .5;
+    zoom: 50%;
+}
+
+.bottomFace2 {
+    display: flex;
+    justify-content: center;
+    opacity: .5;
+    zoom: 50%;
+    padding-top: 20px;
 }

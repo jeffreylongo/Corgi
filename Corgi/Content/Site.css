@@ -344,14 +344,14 @@ h4 {
     display: flex;
     justify-content: center;
     margin-top: 1050px;
-    opacity: .5;
+    opacity: .2;
     zoom: 50%;
 }
 
 .bottomFace2 {
     display: flex;
     justify-content: center;
-    opacity: .5;
+    opacity: .2;
     zoom: 50%;
     padding-top: 20px;
 }

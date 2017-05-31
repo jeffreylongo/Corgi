@@ -10,13 +10,13 @@
                     <span class="glyphicon glyphicon-plus" onclick=""></span> Story
                 </a>
             </div>
-            @*<div class="form-group">
-                @Html.LabelFor(model => model.NewsFeedId, "NewsFeedId", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="form-group">
+                @Html.LabelFor(model => story.NewsFeedId, "NewsFeedId", htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
                     @Html.DropDownList("NewsFeedId", ViewBag.NewsFeedItem as IEnumerable<SelectListItem>, htmlAttributes: new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.NewsFeedId, "", new { @class = "text-danger" })
+                    @Html.ValidationMessageFor(model => story.NewsFeedId, "", new { @class = "text-danger" })
                 </div>
-            </div>*@
+            </div>
             <h4>
                 @story.StoryName
             </h4>

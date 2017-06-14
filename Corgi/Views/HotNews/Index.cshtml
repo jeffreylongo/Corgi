@@ -21,14 +21,7 @@
                         <span class="glyphicon glyphicon-plus" onclick="Create([Bind(Include = "Id,StoryName,Url,NewsFeedId")"></span> Story
                     </a>
                 </div>
-                @*TODO: make this work, news Feed ID dropdown
-                <div class="form-group">
-                    @Html.LabelFor(story => story.NewsFeedId, "NewsFeedId", htmlAttributes: new { @class = "control-label col-md-2" })
-                    <div class="col-md-10">
-                        @Html.DropDownList("NewsFeedId", null, htmlAttributes: new { @class = "form-control" })
-                        @Html.ValidationMessageFor(story => story.NewsFeedId, "", new { @class = "text-danger" })
-                    </div>
-                </div>*@
+
                 <h4>
                     @story.StoryName
                 </h4>
